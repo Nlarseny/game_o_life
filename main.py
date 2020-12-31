@@ -77,23 +77,7 @@ class Cell:
             count += 1
 
         return count
-
-
-# class Button:
-#     def __init__(self, i, j):
-#         self.tk = None
-#         self.button = Button(self, master=window, bg="green", command=self.clicked)
-#         self.button.grid(row=i, column=j, sticky="nsew")
-#
-#     def clicked(self):
-#         matrix[i][j].alive = True
-
-
-# def clicked():
-#     matrix[i][j].alive = True
-#     # self.button = tk.Button(self, master=window, bg="yellow", command=self.clicked)
-#     # self.button.grid(self, row=i, column=j, sticky="nsew")
-#     button.configure(bg="yellow")
+    
 
 def begin_life():
     for x in range(ROW_CONST):
