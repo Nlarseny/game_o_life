@@ -59,21 +59,21 @@ class Cell:
             count += 1
         if self.pos_i - 1 > 0 and self.pos_j - 1 > 0 and matrix[self.pos_i - 1][self.pos_j - 1].alive:
             count += 1
-        if self.pos_i - 1 > 0 and self.pos_j + 1 < 50 and matrix[self.pos_i - 1][self.pos_j + 1].alive:
+        if self.pos_i - 1 > 0 and self.pos_j + 1 < COL_CONST and matrix[self.pos_i - 1][self.pos_j + 1].alive:
             count += 1
 
         # sides
         if self.pos_j - 1 > 0 and matrix[self.pos_i][self.pos_j - 1].alive:
             count += 1
-        if self.pos_j + 1 < 50 and matrix[self.pos_i][self.pos_j + 1].alive:
+        if self.pos_j + 1 < COL_CONST and matrix[self.pos_i][self.pos_j + 1].alive:
             count += 1
 
         # top row
-        if self.pos_i + 1 < 25 and matrix[self.pos_i + 1][self.pos_j].alive:
+        if self.pos_i + 1 < ROW_CONST and matrix[self.pos_i + 1][self.pos_j].alive:
             count += 1
-        if self.pos_i + 1 < 25 and self.pos_j - 1 > 0 and matrix[self.pos_i + 1][self.pos_j - 1].alive:
+        if self.pos_i + 1 < ROW_CONST and self.pos_j - 1 > 0 and matrix[self.pos_i + 1][self.pos_j - 1].alive:
             count += 1
-        if self.pos_i + 1 < 25 and self.pos_j + 1 < 50 and matrix[self.pos_i + 1][self.pos_j + 1].alive:
+        if self.pos_i + 1 < ROW_CONST and self.pos_j + 1 < COL_CONST and matrix[self.pos_i + 1][self.pos_j + 1].alive:
             count += 1
 
         return count
